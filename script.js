@@ -41,3 +41,8 @@ function resetRoast() {
   document.getElementById('loading').classList.remove('show');
   document.getElementById('output').classList.remove('show');
 }
+
+function toggleInfo() {
+  const box = document.getElementById('infoBox');
+  box.classList.toggle('hidden');
+}
