@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Roast My Job</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,14 +13,18 @@
         id="jobInput"
         placeholder="Paste the job description here..."
       ></textarea>
-
       <div class="button-row">
         <button onclick="roastJob()">Roast My Job</button>
         <button id="resetBtn" onclick="resetRoast()">Reset</button>
       </div>
-
       <div id="loading" class="hidden">Roasting in progress... 🔥</div>
       <div id="output"></div>
+      <div class="tipjar">
+        <a href="https://buymeacoffee.com/robhorton" target="_blank">
+          ☕ If you like this and feel I've earned it, you could Buy me a
+          coffee.
+        </a>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
