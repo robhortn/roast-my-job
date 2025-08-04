@@ -27,3 +27,9 @@ async function roastJob() {
     loading.classList.add('hidden');
   }
 }
+
+function resetRoast() {
+  document.getElementById('jobInput').value = '';
+  document.getElementById('output').textContent = '';
+  document.getElementById('loading').classList.add('hidden');
+}
