@@ -4,12 +4,21 @@ body {
   font-family: monospace;
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 20px;
+  margin: 0;
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 800px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 textarea {
@@ -20,7 +29,15 @@ textarea {
   border: none;
   padding: 10px;
   font-size: 16px;
-  margin-bottom: 10px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 button {
@@ -30,29 +47,35 @@ button {
   color: white;
   font-weight: bold;
   cursor: pointer;
+  flex: 1;
+  min-width: 120px;
+}
+
+#resetBtn {
+  background-color: #555;
 }
 
 #loading {
-  margin-top: 10px;
+  margin-top: 15px;
   color: yellow;
 }
 
 #output {
   margin-top: 20px;
   white-space: pre-wrap;
+  background-color: #111;
+  padding: 10px;
+  border-left: 3px solid #ff5252;
+  min-height: 100px;
 }
 
-.hidden {
-  display: none;
+.tipjar {
+  margin-top: 30px;
+  text-align: center;
 }
 
-#resetBtn {
-  margin-left: 10px;
-  background-color: #555;
-}
-
-.button-row {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
+.tipjar a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
 }
