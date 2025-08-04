@@ -79,3 +79,21 @@ button {
   text-decoration: none;
   font-weight: bold;
 }
+
+/* Hide loading and output elements by default */
+#loading {
+  display: none;
+}
+
+#output {
+  display: none;
+}
+
+/* Show elements when they have content or are active */
+#loading.show {
+  display: block;
+}
+
+#output.show {
+  display: block;
+}
