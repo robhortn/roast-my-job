@@ -3,8 +3,10 @@ async function roastJob() {
   const output = document.getElementById('output');
   const loading = document.getElementById('loading');
 
+  // Clear output and show loading
   output.textContent = '';
-  loading.classList.remove('hidden');
+  output.classList.remove('show');
+  loading.classList.add('show');
 
   try {
     const response = await fetch('/.netlify/functions/roast', {
@@ -18,18 +20,24 @@ async function roastJob() {
 
     if (data.roast) {
       output.textContent = data.roast;
+      output.classList.add('show');
     } else {
       output.textContent = 'Error: ' + data.error;
+      output.classList.add('show');
     }
   } catch (error) {
     output.textContent = 'Error roasting job: ' + error.message;
+    output.classList.add('show');
   } finally {
-    loading.classList.add('hidden');
+    loading.classList.remove('show');
   }
 }
 
 function resetRoast() {
   document.getElementById('jobInput').value = '';
   document.getElementById('output').textContent = '';
-  document.getElementById('loading').classList.add('hidden');
+
+  // Hide both loading and output elements
+  document.getElementById('loading').classList.remove('show');
+  document.getElementById('output').classList.remove('show');
 }
