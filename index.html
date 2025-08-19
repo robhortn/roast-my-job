@@ -45,7 +45,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>🔥 Roast My Job 🔥</h1>
+      <h1>🔥Roast My Job</h1>
       <p class="subtext">
         Paste a job description. Get roasted. Laugh, learn, or weep quietly.
       </p>
@@ -75,10 +75,16 @@
       <div id="loading" class="hidden">Roasting in progress... 🔥</div>
       <div id="output"></div>
       <div class="tipjar">
-        <a href="https://buymeacoffee.com/robhorton" target="_blank">
-          ☕ If this made you laugh and helped keep your sanity — buy me a
-          coffee to help fuel the next weird idea.
-        </a>
+        <button
+          class="tipjar-btn"
+          onclick="window.open('https://buymeacoffee.com/robhorton','_blank')"
+        >
+          ☕ Buy Me a Coffee
+        </button>
+        <p class="tipjar-note">
+          If this made you laugh and helped keep your sanity, fuel the next
+          weird idea.
+        </p>
       </div>
     </div>
     <script src="script.js"></script>

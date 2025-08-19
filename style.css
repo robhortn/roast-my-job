@@ -79,10 +79,42 @@ button {
   font-size: 16px;
 }
 
-.tipjar a {
-  color: #ffcc00;
-  text-decoration: none;
+.tipjar-btn {
+  background: linear-gradient(135deg, #ff9800, #ff5252);
+  border: none;
+  color: #fff;
   font-weight: bold;
+  cursor: pointer;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 17px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tipjar-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.5);
+  filter: brightness(1.05);
+}
+
+.tipjar-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+  filter: brightness(0.95);
+}
+
+.tipjar-note {
+  margin-top: 12px;
+  color: #ccc;
+  font-size: 14px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
 }
 
 /* Hide loading and output elements by default */
